@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.test1.SecondPageController" prefHeight="200.0" prefWidth="300.0">
+    <children>
+        <Button layoutX="50.0" layoutY="80.0" text="User" onAction="#goToLibrary" />
+        <Button layoutX="150.0" layoutY="80.0" text="Logout" onAction="#logout" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.Scene?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.test1.LibraryController" prefHeight="300.0" prefWidth="400.0">
+  <children>
+    <TableView fx:id="tableView" layoutX="14.0" layoutY="10.0" prefHeight="200.0" prefWidth="370.0">
+      <columns>
+        <TableColumn fx:id="idColumn" text="ID" />
+        <TableColumn fx:id="titleColumn" text="Title" />
+        <TableColumn fx:id="authorColumn" text="Author" />
+        <TableColumn fx:id="yearColumn" text="Year" />
+      </columns>
+    </TableView>
+
+    <Label layoutX="14.0" layoutY="220.0" text="ID:" />
+    <TextField fx:id="idField" layoutX="50.0" layoutY="218.0" />
+
+    <Label layoutX="14.0" layoutY="250.0" text="Title:" />
+    <TextField fx:id="titleField" layoutX="50.0" layoutY="248.0" />
+
+    <Label layoutX="14.0" layoutY="280.0" text="Author:" />
+    <TextField fx:id="authorField" layoutX="50.0" layoutY="278.0" />
+
+    <Label layoutX="200.0" layoutY="280.0" text="Year:" />
+    <TextField fx:id="yearField" layoutX="230.0" layoutY="278.0" />
+    <Button layoutX="260.0" layoutY="310.0" text="Refresh" onAction="#refreshBooks" />
+
+    <Button layoutX="50.0" layoutY="310.0" text="Add" onAction="#addBook" />
+    <Button layoutX="120.0" layoutY="310.0" text="Update" onAction="#updateBook" />
+    <Button layoutX="190.0" layoutY="310.0" text="Delete" onAction="#deleteBook" />
+  </children>
+</AnchorPane>
